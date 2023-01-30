@@ -1,0 +1,14 @@
+.logout-button {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    color: var(--primary-font-color);
+    position: fixed;
+    right: 8px;
+    top: 12px;
+}
+
+.authenticated-homepage-card {
+    max-width: 400px;
+    margin: 24px auto;
+}

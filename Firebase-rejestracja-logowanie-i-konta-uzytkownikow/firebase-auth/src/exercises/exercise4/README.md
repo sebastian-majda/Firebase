@@ -1,0 +1,3 @@
+- Stwórz nową funkcję obsługującą wylogowywanie (prop: `onLogOut` w komponencie `AuthenticatedHomePage`)
+- Wyloguj użytkownika za pomocą funkcji `signOut(auth)`
+- Jeśli operacja przebiegła poprawnie, powinieneś zostać przekierowany do strony logowania

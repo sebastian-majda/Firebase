@@ -1,0 +1,19 @@
+.button {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.white {
+    color: var(--primary-color);
+    background-color: var(--primary-font-color);
+}
+
+.button:focus {
+    outline-color: var(--primary-color);
+    outline-offset: 4px;
+}

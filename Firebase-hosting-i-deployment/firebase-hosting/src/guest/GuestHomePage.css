@@ -1,0 +1,10 @@
+.guest-homepage-card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 24px auto;
+}
+
+.guest-homepage-card p {
+    text-align: center;
+}

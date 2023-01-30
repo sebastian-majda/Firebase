@@ -1,0 +1,4 @@
+- Uruchom ćwiczenie za pomocą 
+- Stwórz nową funkcję obsługującą formularz logowania (prop: `onLogin` w komponencie `GuestHomePage`)
+- Przekaż dane logowania do `firebase` za pomocą funkcji: `signInWithEmailAndPassword(auth, email, password)`
+- Zaloguj w konsoli string "Logged" gdy Promise zwrócony przez funkcję rozwiąże się pomyślnie.

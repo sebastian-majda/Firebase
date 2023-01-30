@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background: lightgray;
+    --card-background: white;
+    --primary-color: rgb(242, 12, 49);
+    --primary-font-color: white;
+    --shadow-color: #BDA0A0;
+}
+
+html {
+    background-color: var(--background);
+    font-family: "Roboto Light", sans-serif;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding: 12px 0 4px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.app-bar {
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+}
+
+.app-bar h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 12px;
+}
+
+.app-bar h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.app-bar h1 a:focus {
+    outline-color: var(--primary-color);
+    outline-offset: 2px;
+}
+
+.inverted {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: var(--primary-font-color);
+    color: var(--primary-color);
+}

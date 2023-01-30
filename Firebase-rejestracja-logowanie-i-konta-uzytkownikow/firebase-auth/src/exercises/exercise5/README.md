@@ -1,0 +1,3 @@
+- Aktualnie aplikacja na początku zawsze wyświetla ekran logowania, dopiero po chwili przenosi nas do ekranu zalogowanego użytkownika
+- Dodaj stan ładowania, którego wertością jest `true` tak długo jak nie otrzymasz pierwszej informacji z funkcji `onAuthStateChange`
+- W chwili gdy stan ładowania ustawiony jest na `true` wyrenderuj div z tekstem `Loading...` zamiast ekranu logowania / panelu użytkownika
