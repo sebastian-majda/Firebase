@@ -10,6 +10,9 @@ import { auth } from "../../firebase";
 import { GuestHomePage } from "../../guest/GuestHomePage";
 import { RegisterForm } from "../../guest/RegisterForm";
 import { AuthenticatedHomePage } from "../../authenticated/AuthenticatedHomePage";
+// - Stwórz nową funkcję obsługującą wylogowywanie (prop: `onLogOut` w komponencie `AuthenticatedHomePage`)
+// - Wyloguj użytkownika za pomocą funkcji `signOut(auth)`
+// - Jeśli operacja przebiegła poprawnie, powinieneś zostać przekierowany do strony logowania
 
 export default function App() {
   const navigate = useNavigate();
@@ -20,7 +23,7 @@ export default function App() {
       if (user) {
         navigate("/");
       }
-      setCurrentUser(user);
+      setCurrentUser(user); //wazne !
     });
 
     return () => unsubscribe();
@@ -32,8 +35,15 @@ export default function App() {
   const handleRegister = ({ email, password }) =>
     createUserWithEmailAndPassword(auth, email, password);
 
+  const handleLogOut = () => signOut(auth);
+
   if (currentUser) {
-    return <AuthenticatedHomePage currentUser={currentUser} />;
+    return (
+      <AuthenticatedHomePage
+        currentUser={currentUser}
+        onLogOut={handleLogOut}
+      />
+    );
   }
 
   return (

@@ -3,12 +3,13 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBGIIA_rWGRwDJ4Zxw0D8ApwkQu5knR3TU",
-  authDomain: "sebastian-project-a24fd.firebaseapp.com",
-  projectId: "sebastian-project-a24fd",
-  storageBucket: "sebastian-project-a24fd.appspot.com",
-  messagingSenderId: "375416779334",
-  appId: "1:375416779334:web:5d618d283cd332819a1047",
+  apiKey: "AIzaSyBV7_VgXrWWY2d9WXOqFaeqIP7N8MYPN6Y",
+  authDomain: "infoshare-project-8d4ae.firebaseapp.com",
+  projectId: "infoshare-project-8d4ae",
+  storageBucket: "infoshare-project-8d4ae.appspot.com",
+  messagingSenderId: "388575515964",
+  appId: "1:388575515964:web:e8ccce35649780c540fa39",
+  measurementId: "G-V2LHDWFYZS",
 };
 
 const app = initializeApp(firebaseConfig);
