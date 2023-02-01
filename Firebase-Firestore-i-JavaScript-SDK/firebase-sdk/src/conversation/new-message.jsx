@@ -1,13 +1,23 @@
 import { Button, TextField } from "@mui/material";
 import { Stack } from "@mui/system";
 import { useRef } from "react";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
 export function NewMessage({ id }) {
   const firstInputRef = useRef(null);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // żeby przy wysylaniu submita nie przeladowywalo całej strony
     const { author, message } = event.currentTarget.elements;
+
+    const messagesCollection = collection(db, "conversations", id, "messages");
+    await addDoc(messagesCollection, {
+      author: author.value,
+      message: message.value,
+      createdAt: Date.now(),
+    });
+
     message.value = "";
     firstInputRef.current.focus();
   };
